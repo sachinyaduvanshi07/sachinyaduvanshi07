@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #01d1f6;
+        }
+
+        .form-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 4 black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background-color: #f50202;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #686868c4;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Survey Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter E-mail" required><br><br>
+
+            <label for="work-exp">Work Experience:</label><br>
+            <input type="text" id="work-exp" name="work-exp" placeholder="Enter Number" required><br><br>
+
+            <label>Are you comfortable investing in real estate on a platform without first investigating properly?</label><br>
+            <select name="invest" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <label for="suggestions">Suggestions to build a trusted platform:</label><br>
+            <textarea id="suggestions" name="suggestions" placeholder="Enter your suggestions" rows="3"></textarea><br><br>
+
+            <label>You are ready to invest in:</label><br>
+            <input type="checkbox" id="real-estate" name="invest-options" value="Real Estate"> Real Estate<br>
+            <input type="checkbox" id="mutual-funds" name="invest-options" value="Mutual Funds"> Mutual Funds<br>
+            <input type="checkbox" id="crypto" name="invest-options" value="Crypto Currency"> Crypto Currency<br>
+            <input type="checkbox" id="stocks" name="invest-options" value="Stocks & Bonds"> Stocks & Bonds<br><br>
+
+            <label>Are you ready for further contact?</label><br>
+            <input type="radio" id="yes" name="contact" value="Yes" required> Yes
+            <input type="radio" id="no" name="contact" value="No" required> No<br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
